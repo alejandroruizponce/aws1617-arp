@@ -20,7 +20,6 @@ var baseAPI = "/api/v1";
 
 app.get(baseAPI+"/contacts/", (request, response) => {
     
-    var contacts;
     
     db.find({},(err, contacts) => {
         response.send(contacts);
