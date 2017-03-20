@@ -4,8 +4,6 @@ var app = express();
 app.use(bodyParser.json());
 
 var path = require('path');
-var dataStore = require('nedb');
-var dbFileName = path.join(__dirname,'contacts.json');
 
 
 
