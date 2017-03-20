@@ -73,7 +73,7 @@ app.put(baseAPI+"/contacts/:name", (request, response) => {
         else
             return contact;
     })
-})
+});
 
 
 app.listen(port, () => {
