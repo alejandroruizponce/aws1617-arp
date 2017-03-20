@@ -72,7 +72,7 @@ app.put(baseAPI+"/contacts/:name", (request, response) => {
             return updatedContact;
         else
             return contact;
-    })
+    });
 });
 
 
