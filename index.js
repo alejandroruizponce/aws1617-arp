@@ -9,9 +9,18 @@ var db = new dataStore({
     autoload : true
 });
 
+db.insert([{
+        name: "pepe",
+        phone: "12345",
+        email: "pepe@pepe.com"
+    }, {
+        name: "luis",
+        phone: "67890",
+        email: "luis@pepe.com"
+    }]);
 
 
-var port = (process.env.PORT || 16778);
+var port = (process.env.PORT);
 var baseAPI = "/api/v1";
 
 

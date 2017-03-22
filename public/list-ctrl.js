@@ -4,7 +4,7 @@ angular.module("ContactListApp").controller("ListCtrl", function($scope,$http) {
         $http.get("/api/v1/contacts").then(function (response){
             $scope.contacts = response.data;
         });
-    }
+    };
     
     $scope.addContact = function (){
         console.log("Adding contact "+$scope.newContact);
